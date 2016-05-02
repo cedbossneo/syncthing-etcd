@@ -8,7 +8,7 @@ do
   sleep 1
 done
 
-confd -backend etcd -node http://$ETCD_NODE:2379 -onetime
+confd -backend etcd -node http://$ETCD_NODE -onetime
 
 syncthing &
 
